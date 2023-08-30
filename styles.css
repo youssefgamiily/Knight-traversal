@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+table {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    border: 1px solid
+}
+
+table td {
+    box-sizing: border-box;
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+
+}
+
+td h6 {
+    margin: auto;
+}
+svg {
+    display: inline-block; /* or display: inline; */
+  vertical-align: middle; /* Adjust as needed */
+    transform: scale(0.5)
+}
+
+td svg {
+    max-width: 100%; /* Scale SVG down if it's larger than the cell */
+    max-height: 100%; /* Scale SVG down if it's taller than the cell */
+  }
+tr {
+    height: 50px;
+}
+
+form {
+    display: flex;
+    gap: 15px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    display: none;
+    margin: 0px;
+}
+input {
+    position: relative;
+    top: 0px;
+    width: 300px;
+    height: 90%;
+}
+button {
+    width: 100px;
+    height: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: glow 5s ease-in-out infinite, colorChange 2s linear infinite;
+    animation: glowColorSize 10s ease-in-out infinite;
+    display: inline-block; /* Display as an inline block element */
+    height: 50px; /* Set a fixed height */
+}
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+    }
+    50% {
+        text-shadow: 10 10 50px rgba(255, 0, 0, 0.8);
+    }
+}
+
+@keyframes colorChange {
+    0%, 100% {
+        color: #FF00FF; /* Pink */
+    }
+    50% {
+        color: #FF4500; /* Orange Red */
+    }
+}
+
+@keyframes glowColorSize {
+    0%, 100% {
+        color: #FF00FF; /* Pink */
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        font-size: 36px;
+    }
+    20% {
+        color: #FF4500; /* Orange Red */
+        text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        font-size: 38px;
+    }
+    40% {
+        font-size: 36px;
+    }
+    60% {
+        font-size: 38px;
+    }
+    80% {
+        font-size: 36px;
+    }
+}

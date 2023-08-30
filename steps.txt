@@ -1,0 +1,18 @@
+findPath(start, end,  path  ){ if end is 5, start is 1 
+    visited.push(start)
+    neighborsOfStart = ✔
+    if neighborsOfStart.includes(end): // if i'm at start=2 which neighbors 5 (end) --> path includes ([1, 3]
+        path.push(start) [1,3,2]
+        path.push(end) [1,3,2,5]
+        return path returning [1,3,2,5]
+    else {
+        for (neighbor of neighborsOfStart) {
+            let subPath = [start, neighbor]
+            path.append([...subPath])
+            if (!neighbor.visited) return findPath(neighbor, path)
+        }
+    }
+
+
+
+}
